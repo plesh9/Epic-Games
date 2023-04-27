@@ -2,282 +2,549 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Zen+Dots&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFT website</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epic Games</title>
+  <meta name="title" content="Epic-Games">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <!-- nav -->
-    <div id="up" class="nav-up"></div>
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-wrap">
-                <div class="nav__logo">fe<span>NFT</span></div>
-                <div class="nav__links">
-                    <a href="#creator" class="nav__link">Creator</a>
-                    <a href="#colections" class="nav__link">Colections</a>
-                    <a href="#meet" class="nav__link">Meet</a>
-                    <a href="#" class="nav__link active nav-active">Sing Up</a>
-                </div>
-                <div class="burger"><span></span><span></span><span></span></div>
-            </div>
-        </div> <!-- container -->
-    </nav> <!-- nav -->
+<body id="top">
 
-    <div class="navbar">
-        <div class="nav__logo">fe<span>NFT</span>
-            <div class="close-navbar"></div>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn" data-btn>join our team</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="hero has-before" id="home">
+        <div class="container">
+
+          <p class="section-subtitle">Enjoy The Games</p>
+
+          <h1 class="h1 title hero-title">Epic Games Made For <br> True Gamers!</h1>
+
+          <a href="#" class="btn" data-btn>Join With Us</a>
+
+          <div class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
+          </div>
+
         </div>
-        <div class="nav__links">
-            <a href="#creator" class="nav__link">Creator</a>
-            <a href="#colections" class="nav__link">Colections</a>
-            <a href="#meet" class="nav__link">Meet</a>
+      </div>
+
+      <!-- 
+        - #UPCOMING
+      -->
+
+      <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+        <div class="container">
+
+          <p class="section-subtitle" id="upcoming-label" data-reveal="bottom">
+            Upcoming Matches
+          </p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Battles Extreme <br> Masters <span class="span">Tournament</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ol class="upcoming-list">
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-1.png" width="86" height="81" loading="lazy"
+                  alt="Purple Death Cadets" class="card-banner">
+
+                <h3 class="h3 card-title">Purple Death Cadets</h3>
+
+                <div class="card-meta">Group 04 | Match 06th</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="10:00">10:00</time>
+
+                <time class="date" datetime="2022-05-25">25TH May 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-2.png" width="86" height="81" loading="lazy"
+                  alt="Trigger Brain Squad" class="card-banner">
+
+                <h3 class="h3 card-title">Trigger Brain Squad</h3>
+
+                <div class="card-meta">Group 04 | Match 06th</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-3.png" width="86" height="81" loading="lazy"
+                  alt="The Black Hat Hackers" class="card-banner">
+
+                <h3 class="h3 card-title">The Black Hat Hackers</h3>
+
+                <div class="card-meta">Group 05 | Match 02nd</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="12:30">12:30</time>
+
+                <time class="date" datetime="2024-01-10">10TH Jan 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-4.png" width="86" height="81" loading="lazy"
+                  alt="Your Worst Nightmare" class="card-banner">
+
+                <h3 class="h3 card-title">Your Worst Nightmare</h3>
+
+                <div class="card-meta">Group 05 | Match 02nd</div>
+
+              </div>
+
+            </li>
+
+            <li class="upcoming-item">
+
+              <div class="upcoming-card left has-before" data-reveal="left">
+
+                <img src="./assets/images/team-logo-5.png" width="86" height="81" loading="lazy"
+                  alt="Witches And Quizards" class="card-banner">
+
+                <h3 class="h3 card-title">Witches And Quizards</h3>
+
+                <div class="card-meta">Group 02 | Match 03rd</div>
+
+              </div>
+
+              <div class="upcoming-time" data-reveal="bottom">
+                <time class="time" datetime="04:20">04:20</time>
+
+                <time class="date" datetime="2024-12-15">15th Dec 2024</time>
+
+                <div class="social-wrapper">
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <div class="upcoming-card right has-before" data-reveal="right">
+
+                <img src="./assets/images/team-logo-6.png" width="86" height="81" loading="lazy"
+                  alt="Resting Bitch Faces" class="card-banner">
+
+                <h3 class="h3 card-title">Resting Bitch Faces</h3>
+
+                <div class="card-meta">Group 02 | Match 03rd</div>
+
+              </div>
+
+            </li>
+
+          </ol>
+
         </div>
+      </section>
+
+      <!-- 
+        - #NEWS
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            News And <span class="span">Headlines</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="news-list">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-1.jpg" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Business</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Innovative Business All Over The World.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-2.jpg" width="600" height="400" loading="lazy"
+                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Startup</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/news-3.jpg" width="600" height="400" loading="lazy"
+                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">Finance</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Elliot Alderson</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Financial experts support or help you to to find out which way you can raise your funds more...
+                  </p>
+
+                  <a href="#" class="link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Tournaments</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              Ukraine, Kyiv
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:some@gmail.com" class="contact-link">some@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Phone:</span>
+
+            <a href="tel:+380000000000" class="contact-link">+380000000000</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
     </div>
 
-    <!-- header -->
-    <div class="header">
-        <div class="container">
-            <div class="header-wrap">
-                <div class="header__text">
-                    <h1 class="header__title">Collect Super Rare Digital Artworks</h1>
-                    <div class="header__subtitle">feNFT is the world's first and largest NFT marketplace</div>
-                    <div class="h-b">
-                        <a href="#|" class="header__btn active">Explore</a>
-                        <a href="#|" class="header__btn no-active">How it works?</a>
-                    </div>
-                    <div class="header__info">
-                        <div class="header__info-title">
-                            60,000+
-                            <div class="header__info-subtitle">Successful Projects</div>
-                        </div>
-                        <div class="header__info-title">
-                            600+
-                            <div class="header__info-subtitle">Trusted Clients</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header__bg"></div>
-            </div>
-        </div> <!-- container -->
-    </div> <!-- header -->
+    <div class="footer-bottom">
+      <div class="container">
 
-    <!-- creator -->
-    <div class="creator" id="creator">
-        <div class="container">
-            <div class="creator__title">
-                Top Creator
-                <div class="creator__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</div>
-            </div>
-            <div class="creator__columns">
-                <div class="creator__column">
-                    <img src="images/creator-1.png" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Theodore
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1.svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Lyodra
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (1).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Alexander
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (1).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Sasha
-                        <div class="creator__subtext">149.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (2).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Michael
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (3).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Mason
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (4).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Logan
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (5).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Angel
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-                <div class="creator__column">
-                    <img src="images/Ellipse 1 (6).svg" alt="" class="creator__img">
-                    <div class="creator__name">
-                        Bobi
-                        <div class="creator__subtext">329.009 ETH</div>
-                    </div>
-                </div>
-            </div> <!-- .creator_columns -->
-            <div class="creator__btn">
-                <a href="#|" class="creator__link no-active">View ranking</a>
-            </div>
-        </div> <!-- .container -->
-    </div> <!-- .creators -->
+        <p class="copyright">
+          &copy; 2022 Lorem, ipsum dolor..
+        </p>
 
-    <!-- colections -->
-    <div class="colections" id="colections">
-        <div class="container">
-            <div class="colections__title">
-                The Most Collections
-                <div class="colections__subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam,
-                </div>
-            </div>
+      </div>
+    </div>
 
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="swiper__img"><img
-                                src="https://images.hdqwalls.com/wallpapers/cyberpunk-neon-with-sword-4k-8k.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img"><img
-                                src="https://rare-gallery.com/uploads/posts/321697-Cyberpunk-Sci-Fi-4K-3840x2160.jpg"
-                                alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img"><img
-                                src="https://images.hdqwalls.com/download/2020-game-garena-free-fire-xw-1360x768.jpg"
-                                alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img"><img
-                                src="https://images.hdqwalls.com/download/neon-lights-cyber-ninja-boy-4k-fd-1920x1200.jpg"
-                                alt=""></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="swiper__img"><img
-                                src="https://images.hdqwalls.com/download/cyber-japan-neon-lights-girl-with-gun-4k-2i-1336x768.jpg"
-                                alt=""></div>
-                    </div>
+  </footer>
 
-                </div> <!-- .swiper -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
-            </div><!-- .container -->
-        </div><!-- .colections -->
+  <!-- 
+    - #BACK TO TOP
+  -->
 
-        <!-- meet -->
-        <div class="meet" id="meet">
-            <div class="container">
-                <div class="meet-wrap">
-                    <div class="meet__text">
-                        <div class="meet__title">
-                            Meet The feNFT
-                            <div class="meet__subtitle">
-                                We work quickly & with maximum security check out the video below to know how we work
-                            </div>
-                        </div>
-                        <div class="meet__btn active">Learn More</div>
-                    </div>
-                    <div class="meet__content">
-                        <div class="meet__img-2"><img src="images/Ellipse 2.png" alt=""></div>
-                        <div class="meet__img-3"><img src="images/Ellipse 3.png" alt=""></div>
-                        <div class="meet__img-4"><img src="images/Ellipse 4.png" alt=""></div>
-                    </div>
-                </div>
-            </div><!-- container -->
-        </div> <!-- meet -->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
 
-        <!-- art -->
-        <div class="art">
-            <div class="container">
-                <div class="art__text">
-                    <div class="colections__title art__title">
-                        Get in a uniqua rare digital art
-                        <div class="colections__subtitle art__subtitle">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam,</div>
-                    </div>
-                    <div class="art__bnt active">Get it now</div>
-                </div>
-            </div><!-- container -->
-        </div><!-- art -->
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer__nav">
-                        <div class="nav__logo">fe<span>NFT</span></div>
-                        <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
-                        <div class="footer__social">
-                            <a class="footer__social-link" href=""><img src="images/inst.png" alt=""></a>
-                            <a class="footer__social-link" href=""><img src="images/telegram.png" alt=""></a>
-                            <a class="footer__social-link" href=""><img src="images/viber.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="footer__nav">
-                        <div class="footer__title">
-                            Marketpkace
-                            <div class="footer__info">All NFTs</div>
-                            <div class="footer__info">My Account</div>
-                            <div class="footer__info">Career</div>
-                            <div class="footer__info">Virtual Words</div>
-                        </div>
-                    </div>
-                    <div class="footer__nav">
-                        <div class="footer__title">
-                            About Us
-                            <div class="footer__info">About NFTs</div>
-                            <div class="footer__info">Live Auctions</div>
-                            <div class="footer__info">NFT Blog</div>
-                            <div class="footer__info">Activity</div>
-                        </div>
-                    </div>
-                    <div class="footer__nav">
-                        <div class="footer__title">
-                            Support
-                            <div class="footer__info">Help & Support</div>
-                            <div class="footer__info">Item Details</div>
-                            <div class="footer__info">Author Profile</div>
-                            <div class="footer__info">Collection</div>
-                        </div>
-
-
-                    </div>
-                </div>
-        </footer>
-        <script src="Js/App.js"></script>
 </body>
 
 </html>
